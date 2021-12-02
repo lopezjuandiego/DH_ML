@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Librerias 
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/> -->
+    <!-- Estilos   -->
+    <link rel="stylesheet" href="/css/register.css"/>
+    <title>Registro</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <fieldset>
+            <legend class="hide">Nombre y Apellido</legend>
+            <label class="hide" for="nombreapellido">Nombre y apellido</label>
+            <input type="text" name="nombreApellido" id="nombreapellido" placeholder="Nombre y apellido" required>
+        </fieldset>
+
+        <fieldset>
+            <legend class="hide">Nombre de usuario</legend>
+            <label class="hide" for="user">Nombre de usuario</label>
+            <input type="text" name="NombreUsuario" id="user" placeholder="Nombre de usuari@" required>
+        </fieldset>
+
+        <fieldset>
+            <legend class="hide">Email</legend>
+            <label class="hide" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+        </fieldset>
+
+        <fieldset>
+            <legend class="hide">Fecha de nacimiento</legend>
+            <label for="cumple">Fecha de nacimiento</label>
+            <input class="cumple" type="date" name="cumple" id="cumple" max="2003-01-01" placeholder="mm/dd/yyyy"  required>
+        </fieldset>
+
+
+        <fieldset>
+            <legend class="hide">Domicilio</legend>
+            <label class="hide" for="adress">Domicilio</label>
+            <input type="text" name="Domicilio" id="adress" placeholder="Domicilio">
+        </fieldset>       
+
+        <fieldset class="user">
+            <legend >Perfil de usuario</legend>
+            <label class="hide">Perfil de usuario</label>
+            <input type="radio" name="perfil" value="comprador">
+            <label >Comprador</label>
+            <input type="radio" name="perfil" value="vendedor">
+            <label>Vendedor</label>
+        </fieldset>       
+   
+  
+        <fieldset class="column form-field">
+            <legend >Intereses</legend>
+            <label class="hide">Intereses</label>
+            <input type="checkbox" name="intereses" value="Electro">
+            <label class="chk">Electro</label>
+            <input type="checkbox" name="intereses" value="Moda">
+            <label class="chk">Moda</label>
+            <input type="checkbox" name="intereses" value="Hogar">
+            <label class="chk">Hogar</label>
+            <input type="checkbox" name="intereses" value="Juguetería">
+            <label class="chk">Juguetería</label>
+            <input type="checkbox" name="intereses" value="Vida sana">
+            <label class="chk">Vida sana</label>
+        </fieldset>       
+        
+        <fieldset>
+            <legend class="hide" >Foto de usuario</legend>
+            <label for="photo">Subí tu foto</label>
+            <input type="file" name="fotoPerfil" id="photo" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contraseña</legend>
+            <label for="pass">Escribí tu contraseña</label>
+            <input type="password" name="pass" id="pass" placeholder="Escribí tu contraseña" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$" required>
+        </fieldset> 
+
+        <fieldset>
+            <legend class="hide">Contraseña</legend>
+            <label for="confirmpass">Confirmar contraseña</label>
+            <input  type="password" name="confirmpass"  id="cofirmpass" placeholder="Confirmar contraseña"  required />
+        </fieldset>
+        <fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
