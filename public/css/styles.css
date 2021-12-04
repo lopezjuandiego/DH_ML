@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-  margin: 0 px;
-  padding: 0 px;
+
   box-sizing: border-box;
 }
 
@@ -34,12 +33,32 @@ main {
   font-size: 20px;
 }
 
-.logo {
-  width: 35vw;
+#logo {
+  width: 50vw;
+}
+
+#img-logo{
+  max-width:65%;
 }
 
 .search {
-  width: 45vw;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.search fieldset{
+  display: flex;
+  flex-grow: 1;
+  justify-content:space-between;
+  background-color: #ffffff;
+}
+
+.search fieldset input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  
 }
 
 .img {
@@ -85,7 +104,6 @@ main {
   font-weight: 400;
   font-style: italic;
   color: #39b54a;
-  margin: 0px 15px;
   align-self: flex-start;
 }
 
@@ -95,10 +113,8 @@ main {
   font-style: bold;
   margin: 15px 15px;
   width: 100%;
-
   
 }
-
 
 .cajaArticulo {
   background-color: rgb(255, 255, 255);
@@ -118,7 +134,7 @@ main {
 
 .cajaArticulo .descripcion {
   opacity: 0;
-  transition: all 0.3ms ease;
+  transition: all 0.3s ease;
 }
 
 .cajaArticulo .descripcion:hover {
@@ -152,7 +168,7 @@ main {
 
 .fa-truck {
   font-size: 1.5rem;
-  padding: 6px 13px 13px 5px;
+  padding: 12px 7px 11px 8px;
   margin: 1px 7px;
   display: block;
   border: 1px solid #39b54a;
@@ -173,15 +189,16 @@ main {
   font-size: 32px;
   color: #0000ff;
   margin: 1rem;
-  transition: all 0.3ms ease;
 }
-.iconosFooter:hover {
-  color: #e3cb5f;
-}
+
 
 .nav-left,
 .nav-right {
   display: none;
+  margin: 10px;
+}
+
+.txtFooter {
   margin: 10px;
 }
 
@@ -190,21 +207,25 @@ main {
     flex-wrap: nowrap;
     justify-content: space-around;
   }
-  .logo {
+  #logo {
     width: 100%;
   }
   .txt {
     text-align: right;
   }
 
+
+  #img-logo{
+      max-width:55%;
+    
+  }
   .cajaArticulo {
     max-width: 45%;
   }
   .sectioncaja {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px
-;
+    gap: 25px;
     justify-content: center;
   }
   .descripcion {
@@ -230,6 +251,7 @@ main {
   .burger a {
     display: none;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -248,4 +270,17 @@ main {
     justify-content: space-between;
     margin: 20px;
   }
+
+  .fa-truck {
+    font-size: .8rem;
+    right: -1px; 
+   
+}
+.iconosFooter {
+
+  transition: all 0.3s ease;
+}
+.iconosFooter:hover {
+  color: #e3cb5f;
+}
 }

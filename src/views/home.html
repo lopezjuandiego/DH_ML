@@ -23,26 +23,30 @@
   <body>
     <header>
       <section class="main-header">
-        <figure class="logo">
+        <figure id="logo">
           <img
-            
+           id="img-logo"
             src="/images/logo-mercado-liebre.svg"
             alt="Logo de Mercado Liebre"
           />
         </figure>
+
+
+
         <form class="search" action="/" method="get">
           <fieldset>
             <input type="search" placeholder="Buscar producto" name="search" />
-           <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-           </button> 
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </fieldset>
         </form>
-
-        <p class="txt">
-          <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
-          tarjeta de crédito
-        </p>
+        <article>
+          <p class="txt">
+            <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y
+            sin tarjeta de crédito
+          </p>
+        </article>
       </section>
       <section class="navnav">
         <nav class="nav-left">
@@ -65,10 +69,13 @@
           ><i class="fa-solid fa-basket-shopping"></i>
         </nav>
       </section>
+<section>
+  <nav class="burger">
+    <a><i class="fas fa-bars"></i></a>
+  </nav>
 
-      <nav class="burger">
-        <a><i class="fas fa-bars"></i></a>
-      </nav>
+</section>
+      
     </header>
 
     <picture>
@@ -77,7 +84,7 @@
 
     <main>
       <article>
-        <p class="txtTit">Basado en tu última visita</p>
+        <h2 class="txtTit">Basado en tu última visita</h2>
       </article>
       <section class="sectioncaja">
         <article class="cajaArticulo">
@@ -143,7 +150,10 @@
           </section>
         </article>
       </section>
-      <p class="txtTit">Ofertas</p>
+
+      <article>
+        <h2 class="txtTit">Ofertas</h2>
+      </article>
       <section class="sectioncaja">
         <article class="cajaArticulo">
           <picture>
@@ -220,15 +230,13 @@
               efectivo en puntos de pago. ¡Y siempre es seguro!
             </dt>
           </dl>
-          
         </article>
 
         <article>
           <i class="fa-solid fa-gift iconosFooter"></i>
           <dl>
             <dt class="titFooter">Envío gratis desde $ 2.500</dt>
-            <dt>Miles de productos. Es un beneficio de Mercado Puntos.</dt>
-           
+            <dt class="txtFooter">Miles de productos. Es un beneficio de Mercado Puntos.</dt>
           </dl>
         </article>
 
@@ -240,11 +248,12 @@
               ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
               puedas hacer, porque estás siempre protegid@.
             </dt>
-           
           </dl>
         </article>
       </section>
-      <p class="txtCopyRight">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+     <article> 
+       <p class="txtCopyRight">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+     </article>
     </footer>
   </body>
 </html>
