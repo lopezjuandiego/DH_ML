@@ -37,7 +37,7 @@ body {
 form fieldset{
     display: flex;
     border: none;
-    margin: 5px;
+    margin: 15px;
     align-items: center;
    
 }
@@ -48,6 +48,11 @@ form fieldset input{
     outline: none;
     padding:5px;
 }
+
+#lupa{
+  padding:3px 5px
+}
+
 .hide{
     display: none;
 }
@@ -124,11 +129,9 @@ background-color:#0022AA;
     text-align: right;
   }
   
-  .sinsub {
+  .link {
     text-decoration: none;
-  }
-  
-  .espacio {
+    color: #000000;
     margin: 10px 10px;
   }
   
@@ -211,7 +214,9 @@ background-color:#0022AA;
       flex-direction: row;
       justify-content: space-between;
       margin: 20px;
-   
+    }
+
+      .iconosFooter {
       transition: all 0.3s ease;
     }
     .iconosFooter:hover {

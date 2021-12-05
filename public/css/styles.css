@@ -64,12 +64,16 @@ main {
 .img {
   max-width: 100%;
 }
-.sinsub {
-  text-decoration: none;
+
+#lupa{
+  padding:3px 5px
 }
-.espacio {
+.link {
+  text-decoration: none;
+  color: #000000;
   margin: 10px 10px;
 }
+
 .txt {
   font-size: 12px;
   font-weight: 300;

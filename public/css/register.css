@@ -34,19 +34,15 @@ footer {
   flex-grow: 1;
 
 }
+#lupa{
+  padding:3px 5px
+}
 
-/* form {
-  font-family: "Roboto";
-  background-color: #ebebeb;
-  margin: 16px;
-  box-shadow: 0 0 4px 0 #000000;
-  border: none;
-} */
 
 form fieldset {
   display: flex;
   border: none;
-  margin: 5px;
+  margin: 15px;
   align-items: flex-start;
 }
 form fieldset label {
@@ -128,11 +124,9 @@ legend {
   text-align: right;
 }
 
-.sinsub {
+.link {
   text-decoration: none;
-}
-
-.espacio {
+  color: #000000;
   margin: 10px 10px;
 }
 
@@ -176,11 +170,10 @@ legend {
   font-size: 32px;
   color: #0000ff;
   margin: 1rem;
-  transition: all 0.3s ease;
+  
 }
-.iconosFooter:hover {
-  color: #e3cb5f;
-}
+
+
 .txtFooter {
   margin: 10px;
 }
@@ -190,6 +183,7 @@ legend {
   font-weight: 100;
   text-align: left;
   margin: 20px;
+}
 
 @media screen and (min-width: 768px) {
   .main-header {
@@ -240,6 +234,12 @@ legend {
     margin: 20px;
  
 }
+.iconosFooter {
 
-
+  transition: all 0.3s ease;
+}
+.iconosFooter:hover {
+  color: #e3cb5f;
+}
+}
 }
