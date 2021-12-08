@@ -4,11 +4,11 @@
   padding: 0 px;
   box-sizing: border-box;
 }
-header{
-  background-color: #eac926;
 
-}
+
+
 body {
+  font-family: "Roboto";
   background-color: #ebebeb;
 }
 
@@ -24,7 +24,10 @@ body {
   }
   
   .search fieldset{
-     justify-content:space-between;
+    display: flex;
+   flex-grow: 1;
+   justify-content:space-between;
+   background-color: #ffffff;
   } 
   
   .search fieldset input {
@@ -34,7 +37,11 @@ body {
   
   }
 
-form fieldset{
+  #lupa{
+    padding:3px 5px;
+  }
+
+#login fieldset{
     display: flex;
     border: none;
     margin: 15px;
@@ -42,7 +49,7 @@ form fieldset{
    
 }
 
-form fieldset input{
+#login fieldset input{
     flex: 1 0 auto;
     border: none;
     outline: none;
