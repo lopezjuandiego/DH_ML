@@ -1,0 +1,43 @@
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+.txtCopyRight {
+  font-size: 12px;
+  font-weight: 100;
+  text-align: left;
+  margin: 20px;
+}
+
+.titFooter {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.iconosFooter {
+  font-size: 32px;
+  color: #0000ff;
+  margin: 1rem;
+}
+
+.txtFooter {
+  margin: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .flexfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .iconosFooter {
+    transition: all 0.3s ease;
+  }
+  .iconosFooter:hover {
+    color: #e3cb5f;
+  }
+}

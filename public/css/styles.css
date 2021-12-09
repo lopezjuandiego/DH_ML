@@ -1,89 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-* {
- box-sizing: border-box;
-}
-
-header {
-  background-color: #eac926;
-}
-body {
-  font-family: "Roboto";
-  background-color: #ebebeb;
-}
-footer {
-  font-size: 12px;
-  text-align: center;
-}
 
 main {
   width: 90vw;
   margin: auto;
-}
-
-.main-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.main-header p {
-  font-size: 20px;
-}
-
-#logo {
-  width: 50vw;
-}
-
-#img-logo{
-  max-width:65%;
-}
-
-.search {
-  display: flex;
-  flex-grow: 1;
-  flex-basis: auto;
-}
-
-.search fieldset{
-  display: flex;
-  flex-grow: 1;
-  justify-content:space-between;
-  background-color: #ffffff;
-}
-
-.search fieldset input {
-  border: none;
-  outline: none;
-  flex-grow: 1;
-  
-}
-
-.img {
-  max-width: 100%;
-}
-
-#lupa{
-  padding:3px 5px;
-}
-.link {
-  text-decoration: none;
-  color: #000000;
-  margin: 10px 10px;
-}
-
-.txt {
-  font-size: 12px;
-  font-weight: 300;
-  text-align: right;
-}
-
-.txtCopyRight {
-  font-size: 12px;
-  font-weight: 100;
-  text-align: left;
-  margin: 20px;
 }
 
 .txtTit {
@@ -116,7 +34,6 @@ main {
   font-style: bold;
   margin: 15px 15px;
   width: 100%;
-  
 }
 
 .cajaArticulo {
@@ -144,31 +61,6 @@ main {
   opacity: 1;
 }
 
-.burger {
-  text-align: center;
-  width: 100%;
-  background-color: #eac926;
-  padding: 20px;
-  display: inline-block;
-}
-
-.burger a {
-  text-align: center;
-  background-color: #1259c3;
-  font-size: 40px;
-  color: white;
-  width: 5%;
-  padding: 7px;
-  display: inline;
-  border-radius: 8px;
-}
-
-.titFooter {
-  font-size: 18px;
-  font-weight: 700;
-  font-style: bold;
-}
-
 .fa-truck {
   font-size: 1.5rem;
   padding: 12px 7px 11px 8px;
@@ -188,40 +80,7 @@ main {
   transform: rotate(-90deg);
 }
 
-.iconosFooter {
-  font-size: 32px;
-  color: #0000ff;
-  margin: 1rem;
-}
-
-
-.nav-left,
-.nav-right {
-  display: none;
-  margin: 10px;
-}
-
-.txtFooter {
-  margin: 10px;
-}
-
 @media screen and (min-width: 768px) {
-  .main-header {
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-  #logo {
-    width: 100%;
-  }
-  .txt {
-    text-align: right;
-  }
-
-
-  #img-logo{
-      max-width:55%;
-    
-  }
   .cajaArticulo {
     max-width: 45%;
   }
@@ -234,27 +93,6 @@ main {
   .descripcion {
     display: block;
   }
-
-  .navnav {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-  }
-  .nav-left {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .nav-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .burger,
-  .burger a {
-    display: none;
-  }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -267,23 +105,8 @@ main {
     flex-wrap: wrap;
   }
 
-  .flexfooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-  }
-
   .fa-truck {
-    font-size: .8rem;
-    right: -1px; 
-   
-}
-.iconosFooter {
-
-  transition: all 0.3s ease;
-}
-.iconosFooter:hover {
-  color: #e3cb5f;
-}
+    font-size: 0.8rem;
+    right: -1px;
+  }
 }
